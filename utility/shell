@@ -7,3 +7,33 @@ https://netsec.ws/?p=337
 https://dzmitry-savitski.github.io/2018/03/groovy-reverse-and-bind-shell
 
 https://github.com/BlackArch/webshells.git
+
+
+
+# Spawning a TTY Shell
+
+python -c 'import pty; pty.spawn("/bin/sh")'
+
+echo os.system('/bin/bash')
+
+/bin/sh -i
+
+perl —e 'exec "/bin/sh";'
+
+perl: exec "/bin/sh";
+
+ruby: exec "/bin/sh"
+
+lua: os.execute('/bin/sh')
+
+--From within IRB
+exec "/bin/sh"
+
+--From within VI
+:!bash
+
+--From within VI
+:set shell=/bin/bash:shell
+
+--From within nmap
+!sh
