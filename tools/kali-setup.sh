@@ -6,7 +6,8 @@ sudo xrandr --output Virtual-1 --mode 1920x1080  --rate 60
 
 # Update
 echo 'deb https://http.Kali.org/Kali Kali-rolling main non-free contrib
-deb-sources https://http.Kali.org/Kali Kali-rolling main non-free contrib' > /etc/apt/sources.list
+deb-sources https://http.Kali.org/Kali Kali-rolling main non-free contrib
+deb http://inundator.sourceforge.net/repo/ all/' > /etc/apt/sources.list
 echo 'deb https://deb.torproject.org/torproject.org stretch main
 deb-src https://deb.torproject.org/torproject.org stretch main' > /etc/apt/sources.list.d/tor.list
 sudo apt update && sudo apt full-upgrade -y
@@ -26,27 +27,31 @@ sudo localectl set-locale LANG=it_IT.UTF-8
 sudo setxkbmap -layout it
 
 # Install GIT
-sudo apt-get install git
+sudo apt-get install -y git
 
 # Install Tilix (https://github.com/gnunn1/tilix.git)
-sudo apt-get install tilix
+sudo apt-get install -y tilix
 
 # Install the Gnome Task Manager
 sudo apt install gnome-system-monitor -y
 
 # Install Wine (run winecfg after installation)
-sudo dpkg --add-architecture i386 && sudo apt update && sudo apt install wine winbind
+sudo dpkg --add-architecture i386 && sudo apt update -y && sudo apt install -y wine winbind
 
 # Install PIP
-sudo apt update && sudo apt install python3-pip
+sudo apt update -y && sudo apt install -y python3-pip 
 
 # Install OpenVAS (Start with sudo gvm-start)
-sudo apt install openvas && sudo gvm-setup
+sudo apt install openvas -y && sudo gvm-setup
 
 # Install Armitage
-sudo apt install armitage
+sudo apt install armitage -y
 
 # Install Tor Project
 wget -O- https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | sudo apt-key add -
-sudo apt-get update && sudo apt-get install tor deb.torproject.org-keyring
+sudo apt-get update -y && sudo apt-get install -y tor deb.torproject.org-keyring
 
+wget http://inundator.sourceforge.net/inundator.asc | sudo apt-key add inundator.asc
+aptitude update -y && aptitude install inundator -y
+
+echo '=====INSTALLATION COMPLETE!======'
