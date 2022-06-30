@@ -1,0 +1,10 @@
+# SMB
+
+--Access SMB SHARE
+https://tldp.org/HOWTO/SMB-HOWTO-8.html
+
+--All SMB Commands
+https://docs.oracle.com/cd/E26502_01/html/E29004/smbcmdsdaemonsfiles.html
+
+--Smbclient Commands
+https://www.computerhope.com/unix/smbclien.htm
