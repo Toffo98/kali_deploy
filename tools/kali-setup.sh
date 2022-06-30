@@ -5,8 +5,10 @@ echo '%sudo ALL=(ALL) NOPASSWD: ALL' | sudo tee --append /etc/sudoers
 sudo xrandr --output Virtual-1 --mode 1920x1080  --rate 60
 
 # Update
-sudo echo deb https://http.Kali.org/Kali Kali-rolling main non-free contrib > /etc/apt/sources.lst
-sudo echo deb-sources https://http.Kali.org/Kali Kali-rolling main non-free contrib > /etc/apt/sources.lst
+echo 'deb https://http.Kali.org/Kali Kali-rolling main non-free contrib
+deb-sources https://http.Kali.org/Kali Kali-rolling main non-free contrib' > /etc/apt/sources.list
+echo 'deb https://deb.torproject.org/torproject.org stretch main
+deb-src https://deb.torproject.org/torproject.org stretch main' > /etc/apt/sources.list.d/tor.list
 sudo apt update && sudo apt full-upgrade -y
 
 # Clean
@@ -40,3 +42,8 @@ sudo apt update && sudo apt install python3-pip
 
 # Install OpenVAS (Start with sudo gvm-start)
 sudo apt install openvas && sudo gvm-setup
+
+# Install Tor Project
+wget -O- https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | sudo apt-key add -
+sudo apt-get update && sudo apt-get install tor deb.torproject.org-keyring
+
