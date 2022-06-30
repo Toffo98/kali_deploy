@@ -1,3 +1,42 @@
 # WINDOWS SYSTEM KILL
 
+
+--Delete WINLOAD
+
+Delete winload.exe e winload.efi on C:\Windows\System32\
+
+--C Permission
+
+Modify the C folders permission, change the owner to another user (firt create one) and apply to all subfolder
+
+--Delete all REG in windows registry
+
+or simply delete HKEY_CURRENT_CONFIG\System and HKEY_LOCAL_MACHINE\System
+
+CMD in administrator mode:
+
+reg delete "HK.." /f
+
+--Delete UWP APPS
+Change the UAC to max request (always notify)
+
+Go to C:\Windows\System32\SystemApps
+Delete the folder with name Microsoft.AccountSControl and microsoft.creddialoghost
+
+Then go to C:\Windows\System32\SystemResources\
+Delete all
+
+
+
+--Rename all DLL files
+
+Cmd with administrator mode (in C:\Windows\System32\  :
+
+ren *.dll *.what
+
+
+
+
+
 https://www.scriptjunkie.us/2011/05/system-kill/
+
