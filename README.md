@@ -1,13 +1,16 @@
 # kali_deploy
 
-List of # tools:
+List of tools:
 
 -WINPEAS
+
 -IMPACKET
+
 -NC (NETCAT)
 
-List of # utility:
+List of utility:
 
 -WEBSHELL
+
 -WORDLIST
 
