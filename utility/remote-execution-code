@@ -1,0 +1,7 @@
+# REMOTE EXECUTION CODE
+
+--Impacket 
+https://vk9-sec.com/impacket-remote-code-execution-rce-on-windows-from-linux/
+
+--Psexec & Smbexec
+https://blog.ropnop.com/using-credentials-to-own-windows-boxes-part-2-psexec-and-services/
