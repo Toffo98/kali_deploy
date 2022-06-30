@@ -1,0 +1,5 @@
+--WINPEAS
+sudo git clone https://github.com/carlospolop/PEASS-ng.git
+
+--IMPACKET
+sudo git clone https://github.com/SecureAuthCorp/impacket.git
