@@ -1,0 +1,9 @@
+--WORDLISTS REPO
+
+sudo git clone https://github.com/carlospolop/Auto_Wordlists.git
+
+--WEBSHELL
+
+sudo git clone https://github.com/BlackArch/webshells.git
+
+--
