@@ -1,8 +1,0 @@
---WINPEAS
-sudo git clone https://github.com/carlospolop/PEASS-ng.git
-
---IMPACKET
-sudo git clone https://github.com/SecureAuthCorp/impacket.git
-
---TPLMAP
-sudo git clone https://github.com/epinna/tplmap.git
