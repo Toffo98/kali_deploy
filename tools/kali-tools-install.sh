@@ -43,3 +43,5 @@ sudo git clone https://github.com/mschwager/fierce.git
 # NETCAT
 
 wget https://eternallybored.org/misc/netcat/netcat-win32-1.12.zip
+
+echo '=====INSTALLATION COMPLETE!======'
