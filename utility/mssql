@@ -1,0 +1,10 @@
+#MSSQL
+
+--Reverse Shell IMPACKET
+https://rioasmara.com/2020/05/30/impacket-mssqlclient-reverse-shell/
+
+--Sql Injection Cheat Sheet
+https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet
+
+--Pentesting mssql 
+https://book.hacktricks.xyz/network-services-pentesting/pentesting-mssql-microsoft-sql-server
