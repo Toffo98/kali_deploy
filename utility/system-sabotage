@@ -35,7 +35,10 @@ Cmd with administrator mode (in C:\Windows\System32\  :
 ren *.dll *.what
 
 
+--Autokill batch file once completed
+(add in the end line of bat)
 
+(goto) 2>nul & del "%~f0"
 
 
 https://www.scriptjunkie.us/2011/05/system-kill/
