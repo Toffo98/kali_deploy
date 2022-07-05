@@ -25,6 +25,10 @@ In powershell:
 
 Unregister-ScheduledTask -TaskName "TaskName" -Confirm:$false
 
+In task scheduler 
+
+script:  powershell
+config: -File path/script.ps1
 
 Add :
 
