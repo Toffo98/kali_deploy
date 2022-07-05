@@ -16,6 +16,11 @@ Launch with SYSTEM
 
 Schedule another task after 40 sec
 
+Set on remote machine the execution policy from admin powershell:
+
+Set-ExecutionPolicy unrestricted
+
+
 In powershell:
 
 Unregister-ScheduledTask -TaskName "TaskName" -Confirm:$false
