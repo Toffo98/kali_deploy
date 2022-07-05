@@ -12,7 +12,13 @@ Save it to C:\Windows\System32
 
 Create a Scheduled task to launch it (in Windows/SystemRestore)
 
-Launch with SYSTEM and delete the task after (settings in task scheduler)
+Launch with SYSTEM 
+
+Schedule another task after 40 sec
+
+In powershell:
+
+Unregister-ScheduledTask -TaskName "TaskName" -Confirm:$false
 
 
 Add :
