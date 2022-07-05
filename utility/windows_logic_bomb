@@ -15,4 +15,8 @@ Create a Scheduled task to launch it (in Windows/SystemRestore)
 Launch with SYSTEM and delete the task after (settings in task scheduler)
 
 
+Add :
 
+for /F “tokens=*” %1 in ('wevtutil.exe el') DO wevtutil.exe cl “%1”
+
+to delete all event log in windows
